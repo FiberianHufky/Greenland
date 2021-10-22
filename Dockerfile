@@ -4,4 +4,4 @@ COPY website /usr/share/nginx/html
 
 COPY default.conf /etc/nginx/conf.d/default.conf
 
-CMD ["nginx"]
+CMD ["nginx", "-g", "daemon off;"]
